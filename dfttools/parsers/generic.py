@@ -476,7 +476,7 @@ class StringParser(object):
         if n is None:
             return float(result.replace('d', 'e').replace('D', 'E'))
         else:
-            return result.astype(numpy.float)
+            return result.astype(float)
 
     def float_after(self, after, n=None):
         """
